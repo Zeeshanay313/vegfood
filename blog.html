@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VegFoods</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="index.html">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+<div class="container">
+    <a href="#" class="navbar-brand fw-10">VegFoods</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item dropdown">
+                <a href="#shop" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Shop</a>
+                <ul class="dropdown-menu">
+                    <li><a href="shop.html" class="dropdown-item">Shop</a></li>
+                    <li><a href="wishlist.html" class="dropdown-item">Wishlist</a></li>
+                    <li><a href="single.html" class="dropdown-item">Single Product</a></li>
+                    <li><a href="cart.html" class="dropdown-item">Cart</a></li>
+                    <li><a href="checkout.html" class="dropdown-item">Checkout</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#cart" class="nav-link cart-icon"><i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+            </a></li>
+        </ul>
+    </div>
+</div>
+    </nav>
+    <div class="carousel slide" id="home" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="hero-slide" style="background-image: url(imgs/category-1.jpg);">
+                    <div class="hero-overlay"></div>
+                    <div class="container">
+                        <div class="hero-content">
+                            <p class="hero-subtitle">Home Blog</p>
+                            <h1 class="hero-title">Blog</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <section class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <article class="blog-post">
+                        <div class="blog-image">
+                            <img src="imgs/image_1.jpg" alt="Fresh vegetables bowl">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">July 20, 2019</span>
+                                <span class="blog-author">Admin</span>
+                                <span class="blog-comments">
+                                    <i class="fas fa-comment"></i> 3
+                                </span>
+                            </div>
+                            <h2 class="blog-title">Even the all-powerful Pointing has no control about the blind texts</h2>
+                            <p class="blog-excerpt">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            <a href="#" class="blog-read-more">Read more</a>
+                        </div>
+                    </article>
+                    <article class="blog-post">
+                        <div class="blog-image">
+                            <img src="imgs/image_2.jpg" alt="Green peas">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">July 20, 2019</span>
+                                <span class="blog-author">Admin</span>
+                                <span class="blog-comments">
+                                    <i class="fas fa-comment"></i> 3
+                                </span>
+                            </div>
+                            <h2 class="blog-title">Even the all-powerful Pointing has no control about the blind texts</h2>
+                            <p class="blog-excerpt">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            <a href="#" class="blog-read-more">Read more</a>
+                        </div>
+                    </article>
+                    <article class="blog-post">
+                        <div class="blog-image">
+                            <img src="imgs/image_3.jpg" alt="Couple cooking">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">July 20, 2019</span>
+                                <span class="blog-author">Admin</span>
+                                <span class="blog-comments">
+                                    <i class="fas fa-comment"></i> 3
+                                </span>
+                            </div>
+                            <h2 class="blog-title">Even the all-powerful Pointing has no control about the blind texts</h2>
+                            <p class="blog-excerpt">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            <a href="#" class="blog-read-more">Read more</a>
+                        </div>
+                    </article>
+                    <article class="blog-post">
+                        <div class="blog-image">
+                            <img src="imgs/image_4.jpg" alt="Cherry tomatoes and vegetables">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">July 20, 2019</span>
+                                <span class="blog-author">Admin</span>
+                                <span class="blog-comments">
+                                    <i class="fas fa-comment"></i> 3
+                                </span>
+                            </div>
+                            <h2 class="blog-title">Even the all-powerful Pointing has no control about the blind texts</h2>
+                            <p class="blog-excerpt">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            <a href="#" class="blog-read-more">Read more</a>
+                        </div>
+                    </article>
+                    <article class="blog-post">
+                        <div class="blog-image">
+                            <img src="imgs/image_5.jpg" alt="Variety of vegetables and legumes">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">July 20, 2019</span>
+                                <span class="blog-author">Admin</span>
+                                <span class="blog-comments">
+                                    <i class="fas fa-comment"></i> 3
+                                </span>
+                            </div>
+                            <h2 class="blog-title">Even the all-powerful Pointing has no control about the blind texts</h2>
+                            <p class="blog-excerpt">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            <a href="#" class="blog-read-more">Read more</a>
+                        </div>
+                    </article>
+                    <article class="blog-post">
+                        <div class="blog-image">
+                            <img src="imgs/image_6.jpg" alt="Healthy vegetable bowl">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">July 20, 2019</span>
+                                <span class="blog-author">Admin</span>
+                                <span class="blog-comments">
+                                    <i class="fas fa-comment"></i> 3
+                                </span>
+                            </div>
+                            <h2 class="blog-title">Even the all-powerful Pointing has no control about the blind texts</h2>
+                            <p class="blog-excerpt">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            <a href="#" class="blog-read-more">Read more</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-sidebar">
+                        <div class="sidebar-widget">
+                            <div class="search-box">
+                                <input type="text" placeholder="Search..." class="search-input">
+                                <button type="button" class="search-btn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Categories</h3>
+                            <ul class="categories-list">
+                                <li><a href="#">Vegetables <span class="count">(12)</span></a></li>
+                                <li><a href="#">Fruits <span class="count">(22)</span></a></li>
+                                <li><a href="#">Juice <span class="count">(37)</span></a></li>
+                                <li><a href="#">Dries <span class="count">(42)</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Recent Blog</h3>
+                            <div class="recent-posts">
+                                <div class="recent-post">
+                                    <div class="recent-post-image">
+                                        <img src="imgs/image_1.jpg" alt="Recent post">
+                                    </div>
+                                    <div class="recent-post-content">
+                                        <h4 class="recent-post-title">Even the all-powerful Pointing has no control about the blind texts</h4>
+                                        <div class="recent-post-meta">
+                                            <span class="recent-date">April 09, 2019</span>
+                                            <span class="recent-author">Admin</span>
+                                            <span class="recent-comments">19</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="recent-post">
+                                    <div class="recent-post-image">
+                                        <img src="imgs/image_2.jpg" alt="Recent post">
+                                    </div>
+                                    <div class="recent-post-content">
+                                        <h4 class="recent-post-title">Even the all-powerful Pointing has no control about the blind texts</h4>
+                                        <div class="recent-post-meta">
+                                            <span class="recent-date">April 09, 2019</span>
+                                            <span class="recent-author">Admin</span>
+                                            <span class="recent-comments">19</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="recent-post">
+                                    <div class="recent-post-image">
+                                        <img src="imgs/image_3.jpg" alt="Recent post">
+                                    </div>
+                                    <div class="recent-post-content">
+                                        <h4 class="recent-post-title">Even the all-powerful Pointing has no control about the blind texts</h4>
+                                        <div class="recent-post-meta">
+                                            <span class="recent-date">April 09, 2019</span>
+                                            <span class="recent-author">Admin</span>
+                                            <span class="recent-comments">19</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Tag Cloud</h3>
+                            <div class="tag-cloud">
+                                <a href="#" class="tag">FRUITS</a>
+                                <a href="#" class="tag">TOMATO</a>
+                                <a href="#" class="tag">MANGO</a>
+                                <a href="#" class="tag">APPLE</a>
+                                <a href="#" class="tag">CARROTS</a>
+                                <a href="#" class="tag">ORANGE</a>
+                                <a href="#" class="tag">PEPPER</a>
+                                <a href="#" class="tag">EGGPLANT</a>
+                            </div>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Paragraph</h3>
+                            <div class="paragraph-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="scroll-to-top-section">
+        <button class="scroll-to-top" id="scrollToTop">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="footer-title">Vegefoods</h3>
+                    <p class="footer-description">
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Menu</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Shop</a></li>
+                        <li><a href="#" class="footer-link">About</a></li>
+                        <li><a href="#" class="footer-link">Journal</a></li>
+                        <li><a href="#" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Help</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Shipping Information</a></li>
+                        <li><a href="#" class="footer-link">Returns & Exchange</a></li>
+                        <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column footer-contact">
+                    <h3 class="footer-title">Have a Questions?</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>+2 392 3929 210</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>info@yourdomain.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="additional-links">
+                        <a href="#" class="footer-link">FAQs</a>
+                        <a href="#" class="footer-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+   <script src="script.js"></script> 
+</body>
+</html>

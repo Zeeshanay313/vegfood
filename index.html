@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VegFoods</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+<div class="container">
+    <a href="#" class="navbar-brand fw-10">VegFoods</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+            <li class="nav-item dropdown">
+                <a href="#shop" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Shop</a>
+                <ul class="dropdown-menu">
+                    <li><a href="shop.html" class="dropdown-item">Shop</a></li>
+                    <li><a href="wishlist.html" class="dropdown-item">Wishlist</a></li>
+                    <li><a href="single.html" class="dropdown-item">Single Product</a></li>
+                    <li><a href="cart.html" class="dropdown-item">Cart</a></li>
+                    <li><a href="checkout.html" class="dropdown-item">Checkout</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#cart" class="nav-link cart-icon"><i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+            </a></li>
+        </ul>
+    </div>
+</div>
+    </nav>
+    <div class="carousel slide" id="home" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="hero-slide" style="background-image: url(imgs/bg_1.jpg);">
+                    <div class="hero-overlay"></div>
+                    <div class="container">
+                        <div class="hero-content">
+                            <h1 class="hero-title">100% Fresh &amp; Organic Foods</h1>
+                            <p class="hero-subtitle">We Deliver Organic Vegetables & Fruits</p>
+                            <a href="#shop" class="btn btn-primary hero-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url(imgs/bg_2.jpg);">
+                    <div class="hero-overlay"></div>
+                    <div class="container">
+                        <div class="hero-content">
+                            <h1 class="hero-title">We Serve Fresh Vegetables &amp; Fruits</h1>
+                            <p class="hero-subtitle">We Deliver Organic Vegetables & Fruits</p>
+                            <a href="#shop" class="btn btn-primary hero-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="home-icons">
+                <div class="col-lg-3">
+                    <div class="icon-circle pink"><i class="fas fa-truck"></i></div>
+                    <h5 class="icons-title">FREE SHIPPING</h5>
+                    <p class="icons-desc">ON ORDER OVER $100</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="icon-circle beige"><i class="fas fa-apple-alt"></i></div>
+                    <h5 class="icons-title">ALWAYS FRESH</h5>
+                    <p class="icons-desc">PRODUCT WELL PACKAGE</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="icon-circle blue"><i class="fas fa-award"></i></div>
+                    <h5 class="icons-title">SUPERIOR QUALITY</h5>
+                    <p class="icons-desc">QUALITY PRODUCTS</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="icon-circle yellow"><i class="fas fa-headset"></i></div>
+                     <h5 class="icons-title">SUPPORT</h5>
+                     <p class="icons-desc">24/7 SUPPORT</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<section class="container py-5" id="gallery">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="img-card">
+                    <img src="imgs/category-2.jpg" alt="Fresh fruits in basket">
+                    <span class="badge-overlay">Fruits</span>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-center">
+                <div class="middle-cta w-100">
+                    <h2>Vegetables</h2>
+                    <p>Protect the health of every home</p>
+                    <button class="btn-shop">Shop now</button>
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-card">
+                    <img src="imgs/category-1.jpg" alt="Fresh green juice">
+                    <span class="badge-overlay">Juices</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-card">
+                    <img src="imgs/category-3.jpg" alt="Fresh strawberries">
+                    <span class="badge-overlay">Vegetables</span>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="img-card">
+                    <img src="imgs/category.jpg" alt="Fresh vegetables in basket">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-card">
+                    <img src="imgs/category-4.jpg" alt="Mixed nuts and dried fruits">
+                    <span class="badge-overlay">Dried</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="proudct">
+        <div class="container">
+            <h3 class="feature-heading">Featured Products</h3>
+            <h2 class="prod-title">Our Products</h2>
+            <p class="prod-desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <div class="row">
+                <div class="col-md-3">
+                   <div class="product-card">
+                    <div class="product-image">
+                        <div class="discount-badge">30%</div>
+                        <img src="imgs/product-1.jpg" alt="">
+                        <div class="product-actions">
+                            <button class="action-btn" title="View Details">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">BELL PEPPER</h4>
+                        <div class="product-price">
+                            <span class="original-price">$120.00</span>
+                            <span class="current-price">$80.00</span>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="product-card">
+                    <div class="product-image">
+                        <img src="imgs/product-2.jpg" alt="">
+                        <div class="product-actions">
+                            <button class="action-btn" title="View Details">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">STRWABERRY</h4>
+                        <div class="product-price">
+                            <span class="real-price">$120.00</span>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                                <div class="col-md-3">
+                   <div class="product-card">
+                    <div class="product-image">
+                        <img src="imgs/product-3.jpg" alt="">
+                        <div class="product-actions">
+                            <button class="action-btn" title="View Details">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">GREEN BEANS</h4>
+                        <div class="product-price">
+                            <span class="real-price">$120.00</span>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                                <div class="col-md-3">
+                   <div class="product-card">
+                    <div class="product-image">
+                        <img src="imgs/product-4.jpg" alt="">
+                        <div class="product-actions">
+                            <button class="action-btn" title="View Details">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">PURPLE CABBAGE</h4>
+                        <div class="product-price">
+                            <span class="real-price">$120.00</span>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                                <div class="col-md-3">
+                   <div class="product-card">
+                    <div class="product-image">
+                        <img src="imgs/product-5.jpg" alt="">
+                        <div class="product-actions">
+                            <button class="action-btn" title="View Details">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">TOMATOE</h4>
+                        <div class="product-price">
+                            <span class="original-price">$120.00</span>
+                             <span class="current-price">$80.00</span>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                                <div class="col-md-3">
+                   <div class="product-card">
+                    <div class="product-image">
+                        <img src="imgs/product-6.jpg" alt="">
+                        <div class="product-actions">
+                            <button class="action-btn" title="View Details">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">BROCOLLI</h4>
+                        <div class="product-price">
+                            <span class="real-price">$120.00</span>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                                <div class="col-md-3">
+                   <div class="product-card">
+                    <div class="product-image">
+                        <img src="imgs/product-7.jpg" alt="">
+                        <div class="product-actions">
+                            <button class="action-btn" title="View Details">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">CARROTS</h4>
+                        <div class="product-price">
+                            <span class="real-price">$120.00</span>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="product-card">
+                    <div class="product-image">
+                        <img src="imgs/product-8.jpg" alt="">
+                        <div class="product-actions">
+                            <button class="action-btn" title="View Details">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">FRUIT JUICE</h4>
+                        <div class="product-price">
+                            <span class="real-price">$120.00</span>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="deal-section">
+        <div class="vegetable-background"></div>
+        <div class="content-overlay">
+            <div class="best-price-tag">Best Price For You </div>
+            <h1 class="deal-title">Deal of the day</h1>
+            <p class="description">
+                 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+            </p>
+            <h2 class="prod-name">Spinach</h2>
+            <div class="price-info">
+                <span class="price-original">$10 now</span>
+                <span class="price-sale">$5 only</span>
+            </div>
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">205714</span>
+                    <div class="countdown-label">DAYS</div>
+                </div>
+                <div class="separator-icon"></div>
+                 <div class="countdown-item">
+        <span class="countdown-number" id="hours">06</span>
+        <div class="countdown-label">HOURS</div>
+    </div>
+                <div class="separator-icon"></div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">32</span>
+                    <div class="countdown-label">MINUTES</div>
+                </div>
+                <div class="separator-icon"></div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">45</span>
+                    <div class="countdown-label">SECONDS</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <section class="testimonials">
+        <div class="container">
+            <h3 class="testi-heading">Testimony</h3>
+            <h2 class="testi-title">Our satisfied customer says</h2>
+            <p class="testi-desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <div class="testimonial-carousel">
+                <div class="carousel-container" id="testimonialCarousel">
+                    <div class="carousel-slide">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <i class="fas fa-qoute-right qoute-icon"></i>
+                                    <img src="imgs/person_1.jpg" alt="">
+                                    <div class="testimonial-text">
+                                         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                    </div>
+                                    <div class="client-info">
+                                        <div class="client-name">Garreth Smith</div>
+                                        <div class="client-position">System Analyst</div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <i class="fas fa-qoute-right qoute-icon"></i>
+                                    <img src="imgs/person_2.jpg" alt="">
+                                    <div class="testimonial-text">
+                                         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                    </div>
+                                    <div class="client-info">
+                                        <div class="client-name">Garreth Smith</div>
+                                        <div class="client-position">Marketting Manager</div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <i class="fas fa-qoute-right qoute-icon"></i>
+                                    <img src="imgs/person_3.jpg" alt="">
+                                    <div class="testimonial-text">
+                                         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                    </div>
+                                    <div class="client-info">
+                                        <div class="client-name">Garreth Smith</div>
+                                        <div class="client-position">System Analyst</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <i class="fas fa-qoute-right qoute-icon"></i>
+                                    <img src="imgs/person_1.jpg" alt="">
+                                    <div class="testimonial-text">
+                                         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                    </div>
+                                    <div class="client-info">
+                                        <div class="client-name">Garreth Smith</div>
+                                        <div class="client-position">UI Designer</div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <i class="fas fa-qoute-right qoute-icon"></i>
+                                    <img src="imgs/person_2.jpg" alt="">
+                                    <div class="testimonial-text">
+                                         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                    </div>
+                                    <div class="client-info">
+                                        <div class="client-name">Garreth Smith</div>
+                                        <div class="client-position">Marketting Manager</div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <i class="fas fa-qoute-right qoute-icon"></i>
+                                    <img src="imgs/person_3.jpg" alt="">
+                                    <div class="testimonial-text">
+                                         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                    </div>
+                                    <div class="client-info">
+                                        <div class="client-name">Garreth Smith</div>
+                                        <div class="client-position">interface designer</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="carousel-slide">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <i class="fas fa-qoute-right qoute-icon"></i>
+                                    <img src="imgs/person_1.jpg" alt="">
+                                    <div class="testimonial-text">
+                                         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                    </div>
+                                    <div class="client-info">
+                                        <div class="client-name">Garreth Smith</div>
+                                        <div class="client-position">UI Designer</div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <i class="fas fa-qoute-right qoute-icon"></i>
+                                    <img src="imgs/person_2.jpg" alt="">
+                                    <div class="testimonial-text">
+                                         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                    </div>
+                                    <div class="client-info">
+                                        <div class="client-name">Garreth Smith</div>
+                                        <div class="client-position">interface Manager</div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <i class="fas fa-qoute-right qoute-icon"></i>
+                                    <img src="imgs/person_3.jpg" alt="">
+                                    <div class="testimonial-text">
+                                         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                    </div>
+                                    <div class="client-info">
+                                        <div class="client-name">Garreth Smith</div>
+                                        <div class="client-position">System Analyst</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                         <div class="carousel-slide">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <i class="fas fa-qoute-right qoute-icon"></i>
+                                    <img src="imgs/person_1.jpg" alt="">
+                                    <div class="testimonial-text">
+                                         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                    </div>
+                                    <div class="client-info">
+                                        <div class="client-name">Garreth Smith</div>
+                                        <div class="client-position">Marketting Manager</div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <i class="fas fa-qoute-right qoute-icon"></i>
+                                    <img src="imgs/person_2.jpg" alt="">
+                                    <div class="testimonial-text">
+                                         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                    </div>
+                                    <div class="client-info">
+                                        <div class="client-name">Garreth Smith</div>
+                                        <div class="client-position">UI Designer</div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <i class="fas fa-qoute-right qoute-icon"></i>
+                                    <img src="imgs/person_3.jpg" alt="">
+                                    <div class="testimonial-text">
+                                         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                    </div>
+                                    <div class="client-info">
+                                        <div class="client-name">Garreth Smith</div>
+                                        <div class="client-position">Web Developer</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <i class="fas fa-qoute-right qoute-icon"></i>
+                                    <img src="imgs/person_1.jpg" alt="">
+                                    <div class="testimonial-text">
+                                         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                    </div>
+                                    <div class="client-info">
+                                        <div class="client-name">Garreth Smith</div>
+                                        <div class="client-position">UI designer</div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <i class="fas fa-qoute-right qoute-icon"></i>
+                                    <img src="imgs/person_2.jpg" alt="">
+                                    <div class="testimonial-text">
+                                         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                    </div>
+                                    <div class="client-info">
+                                        <div class="client-name">Garreth Smith</div>
+                                        <div class="client-position">Marketting Manager</div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <i class="fas fa-qoute-right qoute-icon"></i>
+                                    <img src="imgs/person_3.jpg" alt="">
+                                    <div class="testimonial-text">
+                                         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                    </div>
+                                    <div class="client-info">
+                                        <div class="client-name">Garreth Smith</div>
+                                        <div class="client-position">interface designer</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="testimonial-indicators">
+                <span class="indicator-dot active" data-slide="0"></span>
+                <span class="indicator-dot" data-slide="1"></span>
+                <span class="indicator-dot" data-slide="2"></span>
+                <span class="indicator-dot" data-slide="3"></span>
+                <span class="indicator-dot" data-slide="4"></span>
+            </div>
+            </div>
+        </div>
+        </section>
+       <section class="partners-section">
+        <div class="container">
+            <div class="partners-container">
+                <div class="partner-logo">
+                    <img src="imgs/partner-1.png" alt="Microsoft">
+                </div>
+                <div class="partner-logo">
+                    <img src="imgs/partner-2.png" alt="Android">
+                </div>
+                <div class="partner-logo">
+                    <img src="imgs/partner-3.png" alt="Java">
+                </div>
+                <div class="partner-logo">
+                    <img src="imgs/partner-4.png" alt="Google">
+                </div>
+                <div class="partner-logo">
+                    <img src="imgs/partner-5.png" alt="Adobe">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container">
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title">Subscribe to our Newsletter</h2>
+                    <p class="newsletter-description">Get e-mail updates about our latest shops and special offers</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input 
+                        type="email" 
+                        class="email-input" 
+                        placeholder="Enter email address"
+                        required
+                        id="emailInput"
+                    >
+                    <button type="submit" class="subscribe-btn">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="scroll-to-top-section">
+        <button class="scroll-to-top" id="scrollToTop">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="footer-title">Vegefoods</h3>
+                    <p class="footer-description">
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Menu</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Shop</a></li>
+                        <li><a href="#" class="footer-link">About</a></li>
+                        <li><a href="#" class="footer-link">Journal</a></li>
+                        <li><a href="#" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Help</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Shipping Information</a></li>
+                        <li><a href="#" class="footer-link">Returns & Exchange</a></li>
+                        <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column footer-contact">
+                    <h3 class="footer-title">Have a Questions?</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>+2 392 3929 210</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>info@yourdomain.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="additional-links">
+                        <a href="#" class="footer-link">FAQs</a>
+                        <a href="#" class="footer-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="success-message" id="successMessage">
+        <i class="fas fa-check-circle"></i>
+        Successfully subscribed to newsletter!
+    </div>
+        
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+   <script src="script.js"></script> 
+</body>
+</html>
